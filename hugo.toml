@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://synergy-services.github.io/'
 languageCode = 'en-us'
-title = 'Synergy Services'
+title = 'Synergy Services Co .Ltd'
 
 [taxonomies]
   category = 'categories'
