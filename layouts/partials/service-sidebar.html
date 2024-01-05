@@ -1,0 +1,9 @@
+<div>
+  {{ range $key, $value := .Site.Taxonomies.services }}
+  <ul>
+    {{ range $value.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>

@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Synergy Services'
+
+[taxonomies]
+  category = 'categories'
+  service = 'services'
+  tag = 'tags'
+  timeline = 'timelines'
+
+[params]
+  dateFormat = "02 Jan 2006"
+  yearFormat = "2006"

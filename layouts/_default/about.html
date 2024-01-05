@@ -1,0 +1,36 @@
+{{define "about"}}
+
+<div class="container mx-auto p-10 mt-10 min-h-full">
+  <h1 class="text-3xl mb-5">{{.Title}}</h1>
+  {{.Content}}
+  <ol class="border-l border-neutral-300 dark:border-neutral-500">
+    {{ range $key, $value := .Site.Taxonomies.timelines }}
+    <ul>
+      {{ range $value.Pages }}
+      <li>
+        <div class="flex-start flex items-center pt-3">
+          <div
+            class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+          ></div>
+          <p class="text-sm text-neutral-500 dark:text-neutral-300">
+            {{ .Params.date.Format .Site.Params.yearFormat }}
+          </p>
+        </div>
+        <div class="mb-6 ml-4 mt-2">
+          <h4 class="mb-1.5 text-xl font-semibold">{{ .Title }}</h4>
+          <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            scelerisque diam non nisi semper, et elementum lorem ornare.
+            Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales
+            vehicula.
+          </p>
+        </div>
+      </li>
+
+      {{ end }}
+    </ul>
+    {{ end }}
+  </ol>
+</div>
+
+{{end}}
