@@ -1,0 +1,13 @@
+images:
+  - src: "/img/homepage-bg.png"
+    alt: "Description for image 1"
+  - src: "/img/image2.jpg"
+    alt: "Description for image 2"
+  - src: "/img/image3.jpg"
+    alt: "Description for image 3"
+  - src: "/img/q.png"
+    alt: "Description for image 1"
+  - src: "/img/image2.jpg"
+    alt: "Description for image 2"
+  - src: "/img/image3.jpg"
+    alt: "Description for image 3"

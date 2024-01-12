@@ -7,3 +7,17 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+#scroll-container {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* For momentum scrolling on iOS devices */
+  /* Other styles */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* for IE and Edge */
+  scrollbar-width: none; /* for Firefox */
+}
