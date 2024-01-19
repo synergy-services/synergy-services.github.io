@@ -1,5 +1,5 @@
 ---
-title: "Hugo & Tailwind Dynamic Duo"
+title: "Home page"
 layout: home
 ---
 

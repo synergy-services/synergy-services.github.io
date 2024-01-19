@@ -3,9 +3,8 @@ languageCode = 'en-us'
 title = 'Synergy Services Co .Ltd'
 
 [taxonomies]
-  category = 'categories'
   service = 'services'
-  tag = 'tags'
+  blog = 'blogs'
   timeline = 'timelines'
 
 [params]

@@ -1,6 +1,6 @@
 ---
 title: "This is blog"
-blogs: ["Gear"]
+blogs: ["Gear", "Service"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a sapien congue, fermentum erat fringilla, feugiat ipsum. Nam ex odio, tempus id venenatis at, fermentum vel erat. Mauris id dui nec eros hendrerit semper ac ut est. Sed eget turpis at lacus eleifend pulvinar. Nulla fermentum imperdiet imperdiet. Aenean mollis commodo bibendum. Nam aliquam interdum risus, quis semper lectus aliquam egestas. Morbi aliquet ante erat, ac varius felis aliquet eu. Integer efficitur, orci eget finibus pulvinar, mauris justo dignissim velit, sit amet condimentum eros nunc vel risus. Quisque ullamcorper velit sit amet posuere bibendum. Morbi sodales lobortis scelerisque. In volutpat, odio quis sagittis sodales, dolor turpis posuere est, ut suscipit nisl augue id leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
