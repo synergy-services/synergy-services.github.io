@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- Container for full-width image and text overlay -->
-<div class="relative bg-white mb-4">
+<div class="relative bg-slate-50 mb-4">
   <!-- Added margin-bottom (mb-10) -->
   <!-- Full-width image -->
   <img
@@ -14,10 +14,37 @@
   <div
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
   >
-    <h1 class="text-3xl md:text-5xl">We are all about cooling tower</h1>
+    <h1 class="text-3xl md:text-5xl">Synergy Services</h1>
+    <h2 class="text-2xl md:text-4xl">Synergise your businesses</h2>
   </div>
 </div>
+<h1 class="p-4 sm:text-2xl text-base">
+  Synergy Services Company Limited has been recognised as full range services
+  provider for all cooling tower owners and businesses. Designing, upgrading,
+  and replacing cooling towers are our expertise since 2006. In recent years,
+  our services are not limited to cooling towers but we provide other solutions
+  for inspections and performance test n various industries from petrochemical,
+  chemical, sugar, pulp and paper, cements and power generation.
+</h1>
 
+<div class="relative text-center mb-4 p-4">
+  <h2 class="text-2xl md:text-3xl mb-4">Our services</h2>
+  <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    {{ range $key, $value := .Site.Taxonomies.services }} {{ range $value.Pages
+    }}
+    <div
+      class="bg-slate-700 hover:bg-slate-800 my-4 flex flex-col items-center rounded relative"
+    >
+      <img
+        class="object-cover w-1/3 h-fit rounded sm:rounded-none sm:rounded-l"
+        src="{{ .Params.image.path }}"
+        alt="{{ .Params.image.alt }}"
+      />
+      <h2 class="p-4 text-slate-50 z-10 text-center">{{ .Title }}</h2>
+    </div>
+    {{ end }} {{ end }}
+  </div>
+</div>
 <!-- Container for horizontal scroll snap -->
 <div class="relative text-center">
   <h2 class="text-2xl md:text-3xl mb-4">Our customers</h2>

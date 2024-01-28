@@ -1,0 +1,20 @@
+<div class="container w-full items-start p-4">
+  <h1 class="text-emerald-900 text-5xl">Projects</h1>
+  {{ range .Site.Pages.ByDate }}{{ if and (eq .Section "project") (not (eq
+  .Content "")) }}
+  <a href="{{ .Permalink }}">
+    <div class="bg-slate-700 hover:bg-slate-800 my-4 p-4 rounded">
+      <h2 class="text-slate-50 text-2xl">{{ .Title }}</h2>
+      <p class="text-slate-300">{{ .Summary | plainify | truncate 150 }}</p>
+      {{ with .Params.projects }}
+      <div class="flex mt-2">
+        <span class="text-emerald-500">Tags:</span>
+        {{ range . }}
+        <span class="ml-2 text-emerald-300">#{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </a>
+  {{ end }} {{ end }}
+</div>
