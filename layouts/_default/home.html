@@ -51,11 +51,11 @@
   <!-- Wrapped in a container for alignment and padding -->
   <div
     id="scroll-container"
-    class="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hide"
+    class="flex overflow-x-scroll snap-x snap-mandatory md:scrollbar-hide"
   >
     {{ range .Site.Data.customers.images }}
-    <div class="snap-center shrink-0 first:ml-0 last:mr-0 w-1/3">
-      <img src="{{ .src }}" alt="{{ .alt }}" class="w-full h-auto block" />
+    <div class="snap-center shrink-0 first:ml-0 last:mr-0 w-1/3 sm:w-1/12">
+      <img src="{{ .src }}" alt="{{ .alt }}" class="w-full h-auto block p-4" />
     </div>
     {{ end }}
   </div>
