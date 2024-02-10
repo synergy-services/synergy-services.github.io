@@ -2,6 +2,8 @@
 title: "Inspection & Performance Test"
 services: ["inspection"]
 image:
-  path: "/img/performance-test.jpg"
-  alt: "Inspection process image"
+  path: "/img/service/service1.jpg"
+  alt: "performance test and onspection process image"
 ---
+
+We specialize in tailored mechanical parts inspection and performance measurement solutions, crucial for enhancing efficiency and minimizing downtime in your plant.
