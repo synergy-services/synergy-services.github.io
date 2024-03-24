@@ -1,6 +1,6 @@
 ---
 title: "Amarillo Gear Company"
-partners: ["TBD"]
+partners: ["sss"]
 logo:
   path: "/img/partner/partner-amarillo.png"
   alt: "logo amarillo gear company"
