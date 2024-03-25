@@ -1,9 +1,52 @@
 {{define "partner"}}
 
 <div class="container mx-auto p-10 mt-10">
-  <h1 class="text-emerald-900 text-5xl">{{.Title}}</h1>
+  <h1 class="text-emerald-900 text-5xl">{{ .Title }}</h1>
   <p class="text-base">{{.Content}}</p>
-  {{ partial "partner-container.html" . }}
+    <div class="container w-full items-start">
+
+      <h1 class="text-emerald-900 text-3xl mt-10">Featured partners<h1>
+        <p class="text-xl"></p>
+          <p>
+            {{ range $key, $value := .Site.Taxonomies.partners }} {{ range $value.Pages }}
+          </p>
+      <div
+        class="bg-slate-300 hover:bg-slate-400 my-4 flex flex-col sm:flex-row items-center rounded"
+      >
+
+            <div class="w-full rounded-t sm:rounded-none sm:rounded-l flex-grow p-4 text-slate-50 bg-slate-700 hover:bg-slate-800">
+              <h2 class="text-2xl font-bold">{{.Title}}</h2>
+              <p>{{.Content}}</p>
+              <div class="flex">
+                {{ range .Params.products }}
+                <div class="sm:mx-4">
+                  <div class="flex justify-center w-auto p-4">
+                    <img
+                class="object-cover h-auto sm:h-48  rounded justify-center"
+                src="{{ .path }}"
+                alt="{{ .alt }}"
+              />
+            </div>
+          <p class="text-xs sm:text-xl p-1 text-center w-full">{{ .name }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ with .Params.logo }}
+
+    <img
+      class="object-cover h-auto w-56 rounded sm:rounded-none sm:rounded-l"
+      src="{{ .path }}"
+      alt="{{ .alt }}"
+    />
+    {{ end }}
+
+  </div>
+
+  {{ end }} {{ end }}
+
+  </div>
 </div>
 
 {{end}}
