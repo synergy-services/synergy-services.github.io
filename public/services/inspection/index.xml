@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inspection on Synergy Services Co .Ltd</title>
+    <link>http://localhost:1313/services/inspection/</link>
+    <description>Recent content in Inspection on Synergy Services Co .Ltd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/services/inspection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inspection &amp; Performance Test</title>
+      <link>http://localhost:1313/service/inspection-performance-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/service/inspection-performance-test/</guid>
+      <description>We specialize in tailored mechanical parts inspection and performance measurement solutions, crucial for enhancing efficiency and minimizing downtime in your plant.</description>
+    </item>
+  </channel>
+</rss>

@@ -29,6 +29,10 @@
     </ul>
     {{ end }}
   </ol>
+  {{ with .GetPage "location.md" }}
+  <h2 class="text-emerald-900 text-5xl mt-10">{{.Title}}</h2>
+  <p class="text-base">{{.Content}}</p>
+  {{ end }}
 </div>
 
 {{end}}

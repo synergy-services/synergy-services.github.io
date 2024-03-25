@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>01 on Synergy Services Co .Ltd</title>
+    <link>http://localhost:1313/timelines/01/</link>
+    <description>Recent content in 01 on Synergy Services Co .Ltd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Dec 2006 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/timelines/01/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Established and represented Terra Cooling Industries</title>
+      <link>http://localhost:1313/timeline/2006/</link>
+      <pubDate>Sun, 31 Dec 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/timeline/2006/</guid>
+      <description>Synergy Services was founded as a technical support unit with a small working team. This year, we began representing Terra Cooling Industries.</description>
+    </item>
+  </channel>
+</rss>

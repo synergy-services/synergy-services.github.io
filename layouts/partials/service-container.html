@@ -1,5 +1,5 @@
-<div class="container w-full items-start p-4">
-  <h1 class="text-emerald-900 text-3xl">Featured services</h1>
+<div class="container w-full items-start">
+  <h1 class="text-emerald-900 text-3xl mt-10">Featured services</h1>
   {{ range $key, $value := .Site.Taxonomies.services }} {{ range $value.Pages }}
   <div
     class="bg-slate-700 hover:bg-slate-800 my-4 flex flex-col sm:flex-row items-center rounded"
