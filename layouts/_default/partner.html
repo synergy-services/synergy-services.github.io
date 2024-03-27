@@ -2,7 +2,10 @@
 
 <div class="container mx-auto p-10 mt-10">
   <h1 class="text-emerald-900 text-5xl">{{ .Title }}</h1>
-  <p class="text-base">{{.Content}}</p>
+  <p class="text-base">
+
+      {{ .Content | safeHTML }}
+  </p>
     <div class="container w-full items-start">
 
       <h1 class="text-emerald-900 text-3xl mt-10">Featured partners<h1>
@@ -11,7 +14,7 @@
             {{ range $key, $value := .Site.Taxonomies.partners }} {{ range $value.Pages }}
           </p>
       <div
-        class="bg-slate-300 hover:bg-slate-400 my-4 flex flex-col sm:flex-row items-center rounded"
+        class="bg-zinc-300 hover:bg-zinc-400 my-4 flex flex-col sm:flex-row items-center rounded"
       >
 
             <div class="w-full rounded-t sm:rounded-none sm:rounded-l flex-grow p-4 text-slate-50 bg-emerald-800 hover:bg-emerald-900">
