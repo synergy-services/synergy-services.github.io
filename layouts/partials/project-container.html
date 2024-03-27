@@ -1,5 +1,5 @@
 <div class="container w-full items-start p-4">
-  <h1 class="text-emerald-900 text-5xl">Projects</h1>
+  <h1 class="text-emerald-900 text-3xl">Referrence projects</h1>
   {{ range .Site.Pages.ByDate }}{{ if and (eq .Section "project") (not (eq
   .Content "")) }}
   <a href="{{ .Permalink }}">

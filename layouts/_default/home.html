@@ -5,7 +5,7 @@
   <!-- Added margin-bottom (mb-10) -->
   <!-- Full-width image -->
   <img
-    src="/img/homepage-bg.jpg"
+    src="/img/homepage-bg2.png"
     class="w-full h-auto"
     alt="synergy-services-background-image"
   />
@@ -14,31 +14,42 @@
   <div
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
   >
-    <h1 class="text-3xl md:text-5xl">Synergy Services</h1>
+    <h1 class="text-emerald-900 text-5xl">Synergy Services</h1>
+    &nbsp;
     <h2 class="text-2xl md:text-4xl">
-      Empowering Total Solutions with Premium Efficiency
+      <i>Empowering Total Solutions with Premium Efficiency</i>
     </h2>
   </div>
+</div> 
+<div class="relative text-center bg-emerald-500">
+<h1 class="p-10 sm:text-xl text-base bg-emerald-800 text-emerald-900 text-3xl">Our services
+</h1>
 </div>
-<h1 class="p-10 sm:text-xl text-base bg-slate-800 text-gray-50">
+<h2 class="p-10 sm:text-xl text-base bg-emerald-800 text-gray-50">
   Synergy Services Company Limited has been recognized as a full-range service
   provider for all cooling tower owners and businesses. Designing, upgrading,
   and replacing cooling towers has been our expertise since 2006. In recent
   years, our services have expanded beyond cooling towers to include inspections
   and performance testing solutions for various industries, including
   petrochemical, chemical, sugar, pulp and paper, cement, and power generation.
-</h1>
+  &nbsp;
 
-<div class="relative text-center p-4 bg-slate-500">
-  <h2 class="text-2xl md:text-3xl mb-4 text-gray-950">Our services</h2>
+</h2>
+
+<div class="relative text-center p-4 bg-emerald-500">
+  &nbsp;
+
+  <h2 class="text-emerald-900 text-3xl">Our services</h2>
+  &nbsp;
+
   <div class="flex flex-col sm:flex-row gap-4 justify-center">
     {{ range $key, $value := .Site.Taxonomies.services }} {{ range $value.Pages
     }}
     <div
-      class="bg-slate-700 hover:bg-slate-800 my-4 flex flex-col items-center rounded relative md:w-1/4"
+      class="bg-slate-800 hover:bg-slate-800 my-4 flex flex-col items-center rounded relative md:w-1/4"
     >
       <img
-        class="object-cover h-fit rounded sm:rounded-none sm:rounded-l"
+        class="object-cover h-50 rounded sm:rounded-none sm:rounded-l"
         src="{{ .Params.image.path }}"
         alt="{{ .Params.image.alt }}"
       />
@@ -49,7 +60,11 @@
 </div>
 <!-- Container for horizontal scroll snap -->
 <div class="relative text-center bg-slate-50">
-  <h2 class="text-2xl md:text-3xl p-4">Our customers</h2>
+  &nbsp;
+
+  <h2 class="text-emerald-900 text-3xl">Our customers</h2>
+  &nbsp;
+
   <!-- Wrapped in a container for alignment and padding -->
   <div
     id="scroll-container"

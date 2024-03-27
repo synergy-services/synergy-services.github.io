@@ -8,7 +8,7 @@
     {{ range $key, $value := .Site.Taxonomies.services }} {{ range $value.Pages
     }}
     <div
-      class="bg-slate-700 hover:bg-slate-800 my-4 flex flex-col sm:flex-row items-center rounded"
+      class="bg-emerald-800 hover:bg-emerald-900 my-4 flex flex-col sm:flex-row items-center rounded"
     >
       <div class="flex-grow p-4 text-slate-50">
         <h2 class="text-2xl">{{.Title}}</h2>
@@ -17,7 +17,7 @@
 
       {{ with .Params.image }}
       <img
-        class="object-cover h-48 w-full sm:w-96 rounded-b sm:rounded-none sm:rounded-r"
+        class="object-cover h-50 w-full sm:w-96 rounded-b sm:rounded-none sm:rounded-r"
         src="{{ .path }}"
         alt="{{ .alt }}"
       />
