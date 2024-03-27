@@ -9,5 +9,8 @@ From routine inspections and maintenance to complete cooling tower upgrades, we 
 
 &nbsp;
 
-**Ready to learn more and get a personalized quote?** Our friendly sales team is here to answer your questions and tailor a solution to your specific needs.
+**Ready to learn more and get a personalized quote?** 
+&nbsp;
+
+Our friendly sales team is here to answer your questions and tailor a solution to your specific needs.
 

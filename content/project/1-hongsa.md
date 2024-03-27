@@ -1,12 +1,20 @@
 ---
 title: "Hongsa Power fill replacement"
 projects: ["PartReplacement"]
-logo:
-  path: "/img/partner/partner-amarillo.png"
-  alt: "logo amarillo gear company"
+
 ---
+Synergy Services maintenanced Hongsa Power Plant natural draft cooling tower (a giant structure that cools water using rising hot air) with replacement of fill packs components, boosting efficiency.
 
-Fill replacement projects for natural draft cooling tower at Hongsa Power, Lao.
+&nbsp;
 
-Project duration: 2021-2024
-No of cell: 3
++ **Client:** Hongsa Power Co.,Ltd.
++ **Duration:** 2021-2024
++ **No. of cell:** 3 units
++ **Fill model:** Terra TCI-C-29CC
+
+
+
+
+&nbsp;
+
+![hongsa power fill replacement 2021-2024](/img/about/about3.png)

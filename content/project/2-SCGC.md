@@ -1,12 +1,28 @@
 ---
-title: "Hongsa Power fill replacement"
+title: "SCGC Group fill replacement"
 projects: ["PartReplacement"]
-logo:
-  path: "/img/partner/partner-amarillo.png"
-  alt: "logo amarillo gear company"
+
 ---
 
-Fill replacement projects for natural draft cooling tower at Hongsa Power, Lao.
++ **Client:** Map Ta Phut Olefin Co.,Ltd (MOC)
++ **Duration:** 2021-2024
++ **No. of cell:** 9 cells
++ **Fill model:** Terra TCI-C-19CC, Terra TCI-C-VOF20
 
-Project duration: 2021-2024
-No of cell: 3
+&nbsp;
+
+Fill replacement projects for Map Ta Phut Olefins
+
+&nbsp;
+
+![hongsa power fill replacement 2021-2024](/img/about/about3.png)
+&nbsp;
+
++ **Client:** Rayong Olefins Co.,Ltd
++ **Duration:** 2021-2024
++ **No. of cell:** 8 cells
++ **Fill model:** Terra TCI-C-19CC, Terra TCI-C-VOF20
+
+&nbsp;
+
+Fill replacement projects for Map Ta Phut Olefins

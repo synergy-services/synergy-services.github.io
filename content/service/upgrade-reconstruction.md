@@ -2,7 +2,7 @@
 title: "Upgrade & Reconstruction"
 services: ["upgrade"]
 image:
-  path: "/img/service/service4.jpg"
+  path: "/img/service/service5.jpg"
   alt: "cooling tower upgrade and reconstruction process image"
 ---
 
