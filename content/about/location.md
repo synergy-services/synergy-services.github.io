@@ -17,13 +17,6 @@ Conveniently located just 15 minutes from Suvarnabhumi Airport and 30 minutes fr
 
 &nbsp;
 
-![synergy service workshop](/img/about/about3.png)
-&nbsp;
-
-
-
-&nbsp;
-
 **Workshop in Rayong, Thailand**
 
 &nbsp;
@@ -32,4 +25,10 @@ Synergy Service workshop facility was founded in 2018 and this is where our expe
 
 &nbsp;
 
-![synergy service workshop](/img/about/about3.png)
+<div class="flex items-center justify-center">
+<img
+        class="object-cover h-50 rounded sm:rounded-none sm:rounded-l"
+        src="/img/about/about3.png"
+        alt="ssynergy service workshop"
+/>
+</div>

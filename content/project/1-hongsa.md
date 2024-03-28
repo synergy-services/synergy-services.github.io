@@ -17,4 +17,8 @@ Synergy Services maintenanced Hongsa Power Plant natural draft cooling tower (a 
 
 &nbsp;
 
-![hongsa power fill replacement 2021-2024](/img/about/about3.png)
+![hongsa power fill replacement 2021-2024](/img/project/1-hongsa1.png)
+
+&nbsp;
+
+![hongsa power fill replacement 2021-2024](/img/project/1-hongsa2.png)
