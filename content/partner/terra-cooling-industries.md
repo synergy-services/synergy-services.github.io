@@ -12,4 +12,4 @@ products:
     path: "/img/partner/partner-terra-product2.png"
     alt: "terra cooling industries counterflow pvc film fill"
 ---
- 
+ Premier supplier of cooling components in the cooling tower industries.

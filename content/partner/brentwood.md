@@ -15,4 +15,4 @@ products:
     path: "/img/partner/partner-brentwood-product3.png"
     alt: "CF80MAxCellular Drift"
 ---
- 
+ A a leading provider of thermoformed plastic solutions to a wide variety of consumer, manufacturing, and environmental industries

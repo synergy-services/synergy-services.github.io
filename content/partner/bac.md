@@ -9,4 +9,5 @@ products:
     path: "/img/partner/partner-bac-product1.png"
     alt: "Series 3000 Cooling Tower"
 ---
+The power of evaporative cooling by optimizing the balance of water and energy
  

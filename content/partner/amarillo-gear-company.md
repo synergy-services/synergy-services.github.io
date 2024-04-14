@@ -1,6 +1,6 @@
 ---
 title: "Amarillo Gear Company"
-partners: ["sss"]
+partners: ["TBD"]
 logo:
   path: "/img/partner/partner-amarillo.png"
   alt: "logo amarillo gear company"
@@ -11,3 +11,4 @@ products:
 
 
 ---
+ A manufacturer of an unparalleled line of gearboxes worldwide since 1934.
