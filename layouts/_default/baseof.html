@@ -1,10 +1,59 @@
-    {{ partial "header.html" . }} 
-    {{ block "main" .}} {{ end }} 
-    {{ block "about" .}} {{ end }} 
-    {{ block "service" .}} {{ end }}
-    {{ block "partner" .}} {{ end }}
-    {{ block "project" .}} {{ end }}
-    {{ block "blog" .}} {{ end }}
-    {{ partial "footer.html" . }}
+<!doctype html>
+<html 
+    lang="en" 
+    class="{{ if and (eq .Section "team") (eq .Kind "page") }}
+        bg-emerald-800
+      {{ end }}"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <script
+      defer
+      language="javascript"
+      type="text/javascript"
+      src="/js/scroll-container.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new QRCode(document.getElementById("qr-code"), {
+          text: window.location.href,
+          width: 128,
+          height: 128,
+        });
+      });
+    </script>
+    <title>{{ if not .IsHome }}{{.Title}} - {{ end }}Synergy Services</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/img/logo.png" /> -->
+  </head>
+  <!-- <body class="flex flex-col h-screen justify-between"> -->
+
+  <body class="flex flex-col min-h-screen">
+    {{ partial "header.html" . }}
+
+    <main
+      class="flex-grow"
+    >
+      {{ block "main" . }}{{ end }} {{ block "about" . }}{{ end }} {{ block
+      "service" . }}{{ end }} {{ block "team" . }}{{ end }} {{ block
+      "team-single" . }}{{ end }} {{ block "partner" . }}{{ end }} {{ block
+      "project" . }}{{ end }} {{ block "project-single" . }}{{ end }}{{ block
+      "blog" . }}{{ end }}
+    </main>
+
+    {{ if not (and (eq .Section "team") (eq .Kind "page")) }} {{ partial
+    "footer.html" . }} {{ end }}
   </body>
 </html>

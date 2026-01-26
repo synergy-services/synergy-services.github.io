@@ -4,6 +4,7 @@ title = 'Synergy Services Co .Ltd'
 
 [taxonomies]
   service = 'services'
+  team = 'team'
   partner = 'partners'
   project = 'projects'
   blog = 'blogs'
