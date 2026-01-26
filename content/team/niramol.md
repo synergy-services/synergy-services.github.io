@@ -1,8 +1,8 @@
 ---
-title: "Jintana Kunkanjanathorn"
-role: "CEO"
+title: "Niramol Wipatthum"
+role: "Senior Sales Engineer"
 team: ["Sales"]
-weight: 1
+weight: 3
 image:
   path: "/img/service/service1.png"
   alt: "performance test and onspection process image"

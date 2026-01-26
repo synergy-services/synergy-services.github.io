@@ -1,5 +1,6 @@
 ---
 title: "Thitaporn Buasala"
+role: "Technical Manager"
 team: ["Technical"]
 image:
   path: "/img/service/service1.png"
