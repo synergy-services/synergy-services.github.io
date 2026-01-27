@@ -4,7 +4,8 @@ N:{{ .Title }};;;;
 FN:{{ .Title }}
 ORG:Synergy Services
 TITLE:{{ .Params.role }}
-TEL;TYPE=CELL:{{ .Params.contact.phone }}
+TEL;TYPE=CELL:{{ .Params.contact.cell }}
+TEL;TYPE=WORK:{{ .Params.contact.phone }}
 EMAIL;TYPE=WORK:{{ .Params.contact.email }}
 URL:{{ .Permalink }}
 END:VCARD

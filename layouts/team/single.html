@@ -19,8 +19,10 @@
     <!-- Contact info -->
     {{ with .Params.contact }}
     <div class="mt-4 space-y-1">
-      {{ with .phone }}
-      <p>📞 <a href="tel:{{ . }}" class="hover:underline">{{ . }}</a></p>
+      {{ with .cell }}
+      <p>📱 <a href="tel:{{ . }}" class="hover:underline"> {{ . }} </a></p>
+      {{ end }} {{ with .phone }}
+      <p>📞 <a href="tel:{{ . }}" class="hover:underline"> {{ . }} </a></p>
       {{ end }} {{ with .email }}
       <p>✉️ <a href="mailto:{{ . }}" class="hover:underline">{{ . }}</a></p>
       {{ end }}
