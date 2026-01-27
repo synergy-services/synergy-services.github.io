@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 N:{{ .Title }};;;;
 FN:{{ .Title }}
-ORG:{{ .Params.company }}
+ORG:Synergy Services
 TITLE:{{ .Params.role }}
 TEL;TYPE=CELL:{{ .Params.contact.phone }}
 EMAIL;TYPE=WORK:{{ .Params.contact.email }}

@@ -1,6 +1,7 @@
 
 [mediaTypes."text/vcard"]
 suffixes = ["vcf"]
+charset = "utf-8"
 
 [outputFormats.VCARD]
 mediaType = "text/vcard"

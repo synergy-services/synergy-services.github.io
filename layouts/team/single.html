@@ -45,8 +45,9 @@
     {{ end }} {{ with .OutputFormats.Get "VCARD" }}
     <a
       href="{{ .RelPermalink }}"
+      target="_blank"
+      rel="noopener"
       class="inline-flex items-center gap-2 mt-3 bg-emerald-900 hover:bg-emerald-950 p-1 rounded text-sm text-emerald-200 hover:text-white"
-      download
     >
       <i class="fa-solid fa-address-card"></i>
       Add to Contacts
