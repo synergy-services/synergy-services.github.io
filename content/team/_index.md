@@ -1,9 +1,8 @@
 ---
-title: "Our team"
+title: "Our Team"
 layout: team
 ---
 
 &nbsp;
 
-Our friendly sales team is here to answer your questions and tailor a solution to your specific needs.
-
+Our team brings together experienced professionals dedicated to delivering reliable, high-quality services.
