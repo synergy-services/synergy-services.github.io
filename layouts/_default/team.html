@@ -16,7 +16,9 @@
       class="flex overflow-x-scroll snap-x snap-mandatory md:scrollbar-hide"
     >
       {{ range $team.Pages }}
-      <div class="snap-center shrink-0 first:ml-0 last:mr-0 w-1/2 sm:w-1/4">
+      <div
+        class="snap-center shrink-0 first:ml-0 last:mr-0 w-2/3 sm:w-1/3 md:w-1/4"
+      >
         <a href="{{ .Permalink }}" class="block h-full">
           <div class="p-2 sm:p-4 h-full">
             <div

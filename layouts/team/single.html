@@ -5,7 +5,7 @@
     {{ with .Params.image }}
     <div class="flex justify-center mb-6">
       <img
-        class="object-cover w-40 h-40 sm:w-56 sm:h-56 rounded-full"
+        class="object-cover w-30 h-30 sm:w-56 sm:h-56 rounded-full"
         src="{{ .path }}"
         alt="{{ .alt }}"
       />
@@ -42,15 +42,16 @@
       <p>Tax ID: 0105549045965</p>
     </div>
 
-    {{ end }}
+    {{ end }} {{ with .OutputFormats.Get "VCARD" }}
     <a
-      href="{{ .RelPermalink }}contact.vcf"
+      href="{{ .RelPermalink }}"
       class="inline-flex items-center gap-2 mt-3 bg-emerald-900 hover:bg-emerald-950 p-1 rounded text-sm text-emerald-200 hover:text-white"
       download
     >
       <i class="fa-solid fa-address-card"></i>
       Add to Contacts
     </a>
+    {{ end }}
 
     <!-- QR code -->
     <div class="mt-8 flex justify-center">
