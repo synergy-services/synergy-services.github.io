@@ -705,6 +705,10 @@ video {
   aspect-ratio: 4/3;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -735,6 +739,10 @@ video {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .min-h-screen {
@@ -795,6 +803,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .max-w-7xl {
