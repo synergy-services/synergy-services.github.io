@@ -741,6 +741,18 @@ video {
   min-height: 0px;
 }
 
+.min-h-\[100svh\] {
+  min-height: 100svh;
+}
+
+.min-h-\[90svh\] {
+  min-height: 90svh;
+}
+
+.min-h-\[80svh\] {
+  min-height: 80svh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
