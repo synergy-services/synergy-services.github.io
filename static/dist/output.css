@@ -1283,6 +1283,10 @@ body {
     width: 14rem;
   }
 
+  .sm\:w-2\/5 {
+    width: 40%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1340,6 +1344,10 @@ body {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
   }
 
   .md\:text-4xl {

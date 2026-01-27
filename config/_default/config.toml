@@ -9,3 +9,7 @@ baseName = "contact"
 
 [outputs]
 page = ["HTML", "VCARD"]
+section = ["HTML"]
+home = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
