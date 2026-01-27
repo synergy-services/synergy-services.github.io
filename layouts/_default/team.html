@@ -16,9 +16,9 @@
       class="flex overflow-x-scroll snap-x snap-mandatory md:scrollbar-hide"
     >
       {{ range $team.Pages }}
-      <div class="snap-center shrink-0 first:ml-0 last:mr-0 w-1/3 sm:w-1/6">
+      <div class="snap-center shrink-0 first:ml-0 last:mr-0 w-1/2 sm:w-1/4">
         <a href="{{ .Permalink }}" class="block h-full">
-          <div class="p-4">
+          <div class="p-2 sm:p-4 h-full">
             <div
               class="bg-emerald-800 hover:bg-emerald-900 rounded-lg transition h-full flex flex-col overflow-hidden"
             >
@@ -28,11 +28,20 @@
                 alt="{{ .alt }}"
                 class="w-full aspect-[4/3] object-cover"
               />
-
               {{ end }}
-              <div class="p-4 text-slate-50 flex-grow">
-                <h3 class="text-xl font-semibold">{{ .Title }}</h3>
-                <p class="mt-2 text-sm leading-relaxed">{{ .Params.role }}</p>
+
+              <div
+                class="p-2 sm:p-4 text-slate-100 flex-1 flex flex-col min-h-0"
+              >
+                <h3 class="text-base font-semibold leading-tight line-clamp-2">
+                  {{ .Title }}
+                </h3>
+
+                <p
+                  class="mt-1 sm:mt-2 text-xs sm:text-sm leading-snug sm:leading-relaxed line-clamp-2"
+                >
+                  {{ .Params.role }}
+                </p>
               </div>
             </div>
           </div>

@@ -1,0 +1,11 @@
+
+[mediaTypes."text/vcard"]
+suffixes = ["vcf"]
+
+[outputFormats.VCARD]
+mediaType = "text/vcard"
+isPlainText = true
+baseName = "contact"
+
+[outputs]
+page = ["HTML", "VCARD"]

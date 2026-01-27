@@ -1,24 +1,62 @@
-{{define "team-single"}}
+{{ define "team-single" }}
 
-<div class="flex-grow">
-  <div class="container mx-auto p-6">
+<div class="flex-grow bg-emerald-800">
+  <div class="container mx-auto p-6 text-center text-slate-100">
     {{ with .Params.image }}
     <div class="flex justify-center mb-6">
       <img
-        class="object-cover h-50 w-full sm:w-96 rounded"
+        class="object-cover w-40 h-40 sm:w-56 sm:h-56 rounded-full"
         src="{{ .path }}"
         alt="{{ .alt }}"
       />
     </div>
     {{ end }}
-    <h1 class="text-3xl font-bold text-white text-center">{{ .Title }}</h1>
 
-    <h2 class="text-2xl text-white text-center">{{ .Params.role }}</h2>
+    <h1 class="text-2xl font-bold">{{ .Title }}</h1>
 
+    <h2 class="text-xl mt-2">{{ .Params.role }}</h2>
+
+    <!-- Contact info -->
+    {{ with .Params.contact }}
+    <div class="mt-4 space-y-1">
+      {{ with .phone }}
+      <p>📞 <a href="tel:{{ . }}" class="hover:underline">{{ . }}</a></p>
+      {{ end }} {{ with .email }}
+      <p>✉️ <a href="mailto:{{ . }}" class="hover:underline">{{ . }}</a></p>
+      {{ end }}
+
+      <p>
+        🌐
+        <a
+          href="https://synergyservices.co.th/"
+          class="hover:underline"
+          target="_blank"
+        >
+          synergyservices.co.th
+        </a>
+      </p>
+      <p>
+        📍 22/44 H-Cape Biz Sector, Sukhapiban 2 Rd., Prawet, Bangkok 10250,
+        Thailand
+      </p>
+      <p>Tax ID: 0105549045965</p>
+    </div>
+
+    {{ end }}
+    <a
+      href="{{ .RelPermalink }}contact.vcf"
+      class="inline-flex items-center gap-2 mt-3 bg-emerald-900 hover:bg-emerald-950 p-1 rounded text-sm text-emerald-200 hover:text-white"
+      download
+    >
+      <i class="fa-solid fa-address-card"></i>
+      Add to Contacts
+    </a>
+
+    <!-- QR code -->
     <div class="mt-8 flex justify-center">
       <div
         id="qr-code"
-        class="bg-white p-3 rounded-lg shadow w-32 h-32 flex items-center justify-center"
+        class="bg-white p-3 rounded-lg w-32 h-32 flex items-center justify-center"
       ></div>
     </div>
   </div>

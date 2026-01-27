@@ -1,6 +1,20 @@
 <header>
-  <div class="bg-emerald-800 p-2">
-    <a href="/"><img src="/img/logo.png" alt="logo" class="h-12 mx-auto" /></a>
+  <div
+    class="
+      {{ if and (eq .Section "team") (eq .Kind "page") }}
+        bg-slate-100
+      {{ else }}
+        bg-emerald-800
+      {{ end }}
+    "
+  >
+    <a href="/">
+      <img
+        src="{{ if and (eq .Section "team") (eq .Kind "page") }}/img/logo-green.png{{ else }}/img/logo.png{{ end }}"
+        alt="logo"
+        class="h-12 mx-auto"
+      />
+    </a>
   </div>
   {{ if not (and (eq .Section "team") (eq .Kind "page")) }} {{ partial
   "navbar.html" . }} {{ end }}
