@@ -28,7 +28,7 @@ Synergy Services workshop facility was founded in 2018 and this is where our exp
 <div style="display:flex; justify-content:center;">
   <div style="width:100%; max-width:768px; aspect-ratio:16/9; overflow:hidden; border-radius:8px;">
     <img
-      src="/img/about/about3.png"
+      src="/img/about/rayong-workshop.png"
       style="width:100%; height:100%; object-fit:cover;"
       alt="synergy service workshop rayong"
     />
@@ -46,7 +46,7 @@ Synergy Services is expanding our sales and service operations into Northeastern
 <div style="display:flex; justify-content:center;">
   <div style="width:100%; max-width:768px; aspect-ratio:16/9; overflow:hidden; border-radius:8px;">
     <img
-      src="/img/about/about4.jpg"
+      src="/img/about/khonkaen-workshop.jpg"
       style="width:100%; height:100%; object-fit:cover;"
       alt="synergy service workshop khon kaen"
     />
