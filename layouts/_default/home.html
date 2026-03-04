@@ -34,6 +34,39 @@
   &nbsp;
 </h2>
 
+<!-- Social Media Section -->
+<div class="bg-zinc-100 py-16">
+  <h2 class="text-center text-3xl text-emerald-900 mb-10">Our Social Media</h2>
+
+  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-0">
+    {{ range first 12 (sort (where .Site.RegularPages "Section" "social") "Date"
+    "desc") }}
+    <a
+      href="{{ .Params.link }}"
+      target="_blank"
+      class="relative group block overflow-hidden"
+    >
+      <img
+        src="{{ .Params.image }}"
+        alt="{{ .Title }}"
+        class="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
+      />
+
+      <!-- Hover overlay -->
+      <div
+        class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center"
+      >
+        <span
+          class="text-white opacity-0 group-hover:opacity-100 text-sm text-center px-4"
+        >
+          {{ .Title }}
+        </span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+
 <div class="relative text-center p-4 bg-zinc-700">
   &nbsp;
 
@@ -56,6 +89,7 @@
     {{ end }} {{ end }}
   </div>
 </div>
+
 <!-- Container for horizontal scroll snap -->
 <div class="relative text-center bg-zinc-100">
   &nbsp;
@@ -75,5 +109,4 @@
     {{ end }}
   </div>
 </div>
-
 {{ end }}

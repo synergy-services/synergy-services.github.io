@@ -21,14 +21,34 @@ Conveniently located just 15 minutes from Suvarnabhumi Airport and 30 minutes fr
 
 &nbsp;
 
-Synergy Service workshop facility was founded in 2018 and this is where our expert engineers get hands-on training in gear overhaul and sharpen their skill with demonstrations.
+Synergy Services workshop facility was founded in 2018 and this is where our expert engineers get hands-on training in gear overhaul and sharpen their skill with demonstrations.
 
 &nbsp;
 
-<div class="flex items-center justify-center">
-<img
-        class="object-cover h-60 rounded sm:rounded-none sm:rounded-l"
-        src="/img/about/about3.png"
-        alt="ssynergy service workshop"
-/>
+<div style="display:flex; justify-content:center;">
+  <div style="width:100%; max-width:768px; aspect-ratio:16/9; overflow:hidden; border-radius:8px;">
+    <img
+      src="/img/about/about3.png"
+      style="width:100%; height:100%; object-fit:cover;"
+      alt="synergy service workshop rayong"
+    />
+  </div>
+</div>
+
+&nbsp;
+
+**Workshop in Khon Kaen, Thailand**
+
+Synergy Services is expanding our sales and service operations into Northeastern Thailand. This marks a significant step forward in strengthening our regional presence, enhancing technical expertise, and delivering even greater support to our customers. We are ready to serve, ready to grow, and committed to excellence.
+
+&nbsp;
+
+<div style="display:flex; justify-content:center;">
+  <div style="width:100%; max-width:768px; aspect-ratio:16/9; overflow:hidden; border-radius:8px;">
+    <img
+      src="/img/about/about4.jpg"
+      style="width:100%; height:100%; object-fit:cover;"
+      alt="synergy service workshop khon kaen"
+    />
+  </div>
 </div>
