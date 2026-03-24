@@ -8,11 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta -->
-    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}Synergy Services</title>
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}Synergy Services | Cooling Tower Solutions Thailand</title>
 
     <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
     <link rel="canonical" href="{{ .Permalink }}">
+    <!-- Keywords (not critical, but OK for niche B2B) -->
+    <meta name="keywords" content="cooling tower, cooling tower Thailand, industrial cooling tower, cooling system">
+
+    <!-- Author -->
+    <meta name="author" content="Synergy Services Co., Ltd">
+
+    <!-- Geo targeting (helps local SEO slightly) -->
+    <meta name="geo.region" content="TH">
+    <meta name="geo.placename" content="Thailand">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Theme color (mobile browser branding) -->
+    <meta name="theme-color" content="#065f46">
 
     <!-- Open Graph (LinkedIn / Facebook) -->
     <meta property="og:title" content="{{ .Title }}">
@@ -28,7 +43,9 @@
     <meta name="twitter:image" content="{{ .Site.Params.og_image }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/img/logo-circle.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo-circle.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/logo-circle.png">
+    <link rel="apple-touch-icon" href="/img/logo-circle.png">
 
     <!-- Fonts -->
     <link
@@ -66,9 +83,29 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "Service",
+      "serviceType": "Cooling Tower Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "Synergy Services Co., Ltd"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Thailand"
+      },
+      "description": "Cooling tower supply, maintenance, and energy-efficient solutions for industrial applications."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
       "name": "Synergy Services Co., Ltd",
-      "url": "{{ .Site.BaseURL }}"
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TH"
+      },
+      "areaServed": "Thailand"
     }
     </script>
 
