@@ -1,19 +1,40 @@
-baseURL = 'https://synergy-services.github.io/'
-languageCode = 'en-us'
-title = 'Synergy Services Co .Ltd'
+baseURL = "https://synergy-services.github.io/"
+languageCode = "en-us"
+title = "Synergy Services Co., Ltd"
+enableRobotsTXT = true
 
+# Clean URLs
+canonifyURLs = true
+uglyURLs = false
+
+# Sitemap config
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+# Taxonomies
 [taxonomies]
-  service = 'services'
-  team = 'team'
-  partner = 'partners'
-  project = 'projects'
-  blog = 'blogs'
-  timeline = 'timelines'
+  service = "services"
+  team = "team"
+  partner = "partners"
+  project = "projects"
+  blog = "blogs"
+  timeline = "timelines"
 
+# Params
 [params]
   dateFormat = "02 Jan 2006"
   yearFormat = "2006"
 
+  # SEO defaults
+  description = "Cooling tower solutions, maintenance, and energy-efficient systems in Thailand."
+  author = "Synergy Services Co., Ltd"
+
+  # Open Graph (for LinkedIn / social sharing)
+  og_image = "/images/og-default.jpg"
+
+# Markdown rendering
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

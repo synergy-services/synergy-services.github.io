@@ -1,59 +1,97 @@
 <!doctype html>
 <html 
-    lang="en" 
-    class="{{ if and (eq .Section "team") (eq .Kind "page") }}
-        bg-emerald-800
-      {{ end }}"
+  lang="en" 
+  class="{{ if and (eq .Section "team") (eq .Kind "page") }} bg-emerald-800 {{ end }}"
 >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/img/logo-green.png" />
+
+    <!-- SEO Meta -->
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}Synergy Services</title>
+
+    <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <!-- Open Graph (LinkedIn / Facebook) -->
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ .Site.Params.og_image }}">
+
+    <!-- Optional Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="twitter:image" content="{{ .Site.Params.og_image }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/logo-circle.png" />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/dist/output.css" />
 
-    <script
-      defer
-      language="javascript"
-      type="text/javascript"
-      src="/js/scroll-container.js"
-    ></script>
+    <!-- Scripts -->
+    <script defer src="/js/scroll-container.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        new QRCode(document.getElementById("qr-code"), {
-          text: window.location.href,
-          width: 128,
-          height: 128,
-        });
+        var el = document.getElementById("qr-code");
+        if (el) {
+          new QRCode(el, {
+            text: window.location.href,
+            width: 128,
+            height: 128,
+          });
+        }
       });
     </script>
-    <title>{{ if not .IsHome }}{{.Title}} - {{ end }}Synergy Services</title>
-    <!-- <link rel="icon" type="image/x-icon" href="/img/logo.png" /> -->
+
+    <!-- Structured Data (Basic SEO boost) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Synergy Services Co., Ltd",
+      "url": "{{ .Site.BaseURL }}"
+    }
+    </script>
+
   </head>
-  <!-- <body class="flex flex-col h-screen justify-between"> -->
 
   <body class="flex flex-col min-h-screen">
     {{ partial "header.html" . }}
 
-    <main
-      class="flex-grow"
-    >
-      {{ block "main" . }}{{ end }} {{ block "about" . }}{{ end }} {{ block
-      "service" . }}{{ end }} {{ block "team" . }}{{ end }} {{ block
-      "team-single" . }}{{ end }} {{ block "partner" . }}{{ end }} {{ block
-      "project" . }}{{ end }} {{ block "project-single" . }}{{ end }}{{ block
-      "blog" . }}{{ end }}
+    <main class="flex-grow">
+      {{ block "main" . }}{{ end }}
+      {{ block "about" . }}{{ end }}
+      {{ block "service" . }}{{ end }}
+      {{ block "team" . }}{{ end }}
+      {{ block "team-single" . }}{{ end }}
+      {{ block "partner" . }}{{ end }}
+      {{ block "project" . }}{{ end }}
+      {{ block "project-single" . }}{{ end }}
+      {{ block "blog" . }}{{ end }}
     </main>
 
-    {{ if not (and (eq .Section "team") (eq .Kind "page")) }} {{ partial
-    "footer.html" . }} {{ end }}
+    {{ if not (and (eq .Section "team") (eq .Kind "page")) }}
+      {{ partial "footer.html" . }}
+    {{ end }}
+
   </body>
 </html>
