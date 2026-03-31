@@ -9,29 +9,34 @@
     class="w-full h-auto"
     alt="synergy-services-background-image"
   />
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-zinc-700 bg-opacity-70"></div>
 
   <!-- Text overlay -->
   <div
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
   >
-    <h1 class="text-emerald-900 text-5xl">Synergy Services</h1>
+    <h1 class="text-emerald-500 text-5xl">
+      Synergy Services Cooling Tower Services in Thailand
+    </h1>
     &nbsp;
-    <h2 class="text-2xl md:text-4xl">
-      <i>Empowering Total Solutions with Premium Efficiency</i>
+    <h2 class="text-2xl md:text-4xl text-zinc-50">
+      <i>Expert Installation, Maintenance, Inspection & Upgrade Solutions</i>
     </h2>
   </div>
 </div>
 <div class="relative text-center bg-emerald-500">
   <h1 class="p-10 bg-emerald-800 text-zinc-50 text-3xl">Who we are</h1>
 </div>
+
 <h2 class="pb-10 px-10 sm:text-xl text-base bg-emerald-800 text-zinc-50">
-  Synergy Services Company Limited has been recognized as a full-range service
-  provider for all cooling tower owners and businesses. Designing, upgrading,
-  and replacing cooling towers has been our expertise since 2006. In recent
-  years, our services have expanded beyond cooling towers to include inspections
-  and performance testing solutions for various industries, including
-  petrochemical, chemical, sugar, pulp and paper, cement, and power generation.
-  &nbsp;
+  Synergy Services Company Limited is a trusted provider of
+  <strong>cooling tower services in Thailand</strong>, specializing in system
+  design, installation, maintenance, inspection, and upgrades. We support
+  industries including petrochemical, power generation, sugar, and
+  manufacturing, helping improve cooling efficiency and reduce operational
+  downtime. We are serving Chonburi, Rayong, Isan, and industrial zones across
+  Thailand
 </h2>
 
 <!-- Social Media Section -->
@@ -76,15 +81,18 @@
   <div class="flex flex-col sm:flex-row gap-4 justify-center">
     {{ range $key, $value := .Site.Taxonomies.services }} {{ range $value.Pages
     }}
+
     <div
       class="bg-emerald-700 hover:bg-emerald-800 my-4 flex flex-col items-center rounded relative md:w-1/4"
     >
-      <img
-        class="object-cover h-50 rounded sm:rounded-none sm:rounded-l"
-        src="{{ .Params.image.path }}"
-        alt="{{ .Params.image.alt }}"
-      />
-      <h2 class="p-4 text-slate-50 z-10 text-center">{{ .Title }}</h2>
+      <a href="{{ .RelPermalink }}">
+        <img
+          class="object-cover h-50 rounded sm:rounded-none sm:rounded-l"
+          src="{{ .Params.image.path }}"
+          alt="{{ .Params.image.alt }}"
+        />
+        <h2 class="p-4 text-slate-50 z-10 text-center">{{ .Title }}</h2>
+      </a>
     </div>
     {{ end }} {{ end }}
   </div>

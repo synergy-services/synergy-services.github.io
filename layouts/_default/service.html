@@ -3,26 +3,32 @@
 <div class="container mx-auto p-10 mt-10">
   <h1 class="text-emerald-900 text-5xl">{{.Title}}</h1>
   <p class="text-base">{{.Content}}</p>
+
   <div class="container w-full items-start">
     <h1 class="text-emerald-900 text-3xl mt-10">Featured services</h1>
+
     {{ range $key, $value := .Site.Taxonomies.services }} {{ range $value.Pages
     }}
-    <div
-      class="bg-emerald-800 hover:bg-emerald-900 my-4 flex flex-col sm:flex-row items-center rounded"
-    >
-      <div class="flex-grow p-4 text-slate-50">
-        <h2 class="text-2xl">{{.Title}}</h2>
-        <p>{{.Content}}</p>
-      </div>
 
-      {{ with .Params.image }}
-      <img
-        class="object-cover h-50 w-full sm:w-96 rounded-b sm:rounded-none sm:rounded-r"
-        src="{{ .path }}"
-        alt="{{ .alt }}"
-      />
-      {{ end }}
-    </div>
+    <a href="{{ .RelPermalink }}">
+      <div
+        class="bg-emerald-800 hover:bg-emerald-900 my-4 flex flex-col sm:flex-row items-center rounded cursor-pointer transition duration-200"
+      >
+        <div class="flex-grow p-4 text-slate-50">
+          <h2 class="text-2xl">{{.Title}}</h2>
+          <p>{{.Description}}</p>
+        </div>
+
+        {{ with .Params.image }}
+        <img
+          class="object-cover h-50 w-full sm:w-96 rounded-b sm:rounded-none sm:rounded-r"
+          src="{{ .path }}"
+          alt="{{ .alt }}"
+        />
+        {{ end }}
+      </div>
+    </a>
+
     {{ end }} {{ end }}
   </div>
 </div>
