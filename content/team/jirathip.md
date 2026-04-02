@@ -1,6 +1,6 @@
 ---
 title: "Jirathip Kunkanjanathorn"
-role: "Management Trainee – Digital & Innovation"
+role: "Business Development Manager"
 team: ["Management"]
 contact:
   phone: "+66 61 146 6922"

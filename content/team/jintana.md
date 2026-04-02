@@ -1,6 +1,6 @@
 ---
 title: "Jintana Kunkanjanathorn"
-role: "CEO"
+role: "CEO & Sales Director"
 team: ["Management"]
 contact:
   phone: "+66 64 989 3232"
