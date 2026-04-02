@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://synergyservices.co.th/sitemap.xml
