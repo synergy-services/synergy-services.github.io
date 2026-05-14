@@ -721,6 +721,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .aspect-\[4\/3\] {
   aspect-ratio: 4/3;
 }
@@ -1568,6 +1572,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
